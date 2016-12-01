@@ -4,36 +4,40 @@
   <meta charset="UTF-8">
   <title>Спецтех24 - Каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <div class="logo">
-    <a href="#" class="logo-link">
-      <img src="#" alt="грузовик" class="logo-link-img" />
-      <span class="logo-link-text"><b>Спецтех</b>24</span>
-    </a>
+  <div class="container">
+    <div class="logo">
+        <a href="#" class="logo-link">
+          <img src="#" alt="грузовик" class="logo-link-img" />
+          <span class="logo-link-text"><b>Спецтех</b>24</span>
+        </a>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <button href="#" class="header-menu-call">Заказать звонок</button>
+    </nav>
   </div>
-  <nav class="header-menu">
-	  <ul>
-		  <li><a href="#">Главная</a></li>
-		  <li><a href="#">Техника</a></li>
-		  <li><a href="#">Блог</a></li>
-		  <li><a href="#">Контакты</a></li>
-      <li></li>
-	  </ul>
-    <a href="#" class="header-menu-call">Заказать звонок</a>
-   </nav>
 </header>
-
 <main>	
   <div class="rent">
-  	<h1 class="promo-tagline">Lorem ipsum dolor.</h1>
-  	<p class="promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, commodi.</p>
-  	<a href="" class="promo-link">Lorem ipsum.</a>
-    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    <div class="container">
+    	<h1 class="promo-tagline">Lorem ipsum dolor.</h1>
+    	<p class="promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, commodi.</p>
+    	<a href="" class="promo-link">Lorem ipsum.</a>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    </div>
   </div>
   
-    <div class="catalog">
+  <div class="catalog">
+    <div class="container">
       <section class="catalog-menu">
   	  	<h2>Lorem ipsum.</h2>
   	  	<ul>
@@ -47,13 +51,7 @@
   	  	</ul>
         <a href="#" class="catalog-menu-download"></a>
       </section>
-      <div class="cat">
-        <h2>Lorem ipsum dolor.</h2>
-        <img src="#" alt="cat M315D">
-        <span>Lorem ipsum.</span>
-        <a href="#" class="cat-rent"></a>
-        <a href="#" class="cat-more"></a>
-      </div>
+
       <div class="cat">
         <h2>Lorem ipsum dolor.</h2>
         <img src="#" alt="cat M315D">
@@ -62,14 +60,6 @@
         <a href="#" class="cat-more"></a>
       </div>
 
-  	</div>
-    <div class="cat-new">
-        <h2>Lorem ipsum dolor.</h2>
-        <img src="#" alt="cat M315D">
-        <span>Lorem ipsum.</span>
-        <a href="#" class="cat-rent"></a>
-        <a href="#" class="cat-more"></a>
-      </div>
       <div class="cat">
         <h2>Lorem ipsum dolor.</h2>
         <img src="#" alt="cat M315D">
@@ -77,21 +67,36 @@
         <a href="#" class="cat-rent"></a>
         <a href="#" class="cat-more"></a>
       </div>
+
+  	 
+      <div class="cat">
+        <h2>Lorem ipsum dolor.</h2>
+        <img src="#" alt="cat M315D">
+        <span>Lorem ipsum.</span>
+        <a href="#" class="cat-rent"></a>
+        <a href="#" class="cat-more"></a>
+      </div>
+
+      <div class="cat">
+        <h2>Lorem ipsum dolor.</h2>
+        <img src="#" alt="cat M315D">
+        <span>Lorem ipsum.</span>
+        <a href="#" class="cat-rent"></a>
+        <a href="#" class="cat-more"></a>
+      </div>
+
       <ul>
         <li><a href="#" class="page">1</a></li>
         <li><a href="#" class="page">2</a></li>
         <li><a href="#" class="page">3</a></li>
         <li><a href="#" class="page">4</a></li>
       </ul>
+
+    </div>
   </div>
   <div class="special">
-    <div class="cat-sale">
-      <h2>Lorem ipsum dolor.</h2>
-      <img src="#" alt="cat M315D">
-      <span><s>Lorem.</s>Lorem ipsum.</span>
-      <a href="#" class="cat-rent"></a>
-      <a href="#" class="cat-more"></a>
-    </div>
+   <div class="container">
+
     <div class="cat">
       <h2>Lorem ipsum dolor.</h2>
       <img src="#" alt="cat M315D">
@@ -107,24 +112,35 @@
       <a href="#" class="cat-rent"></a>
       <a href="#" class="cat-more"></a>
     </div>
+
+    <div class="cat">
+      <h2>Lorem ipsum dolor.</h2>
+      <img src="#" alt="cat M315D">
+      <span><s>Lorem.</s>Lorem ipsum.</span>
+      <a href="#" class="cat-rent"></a>
+      <a href="#" class="cat-more"></a>
+    </div>
+   </div>
   </div>
+</main>
 
- </main>
 <footer>
-  <div class="logo">
-    <a href="#" class="logo-link">
-      <img src="#" alt="грузовик" class="logo-link-img" />
-      <span class="logo-link-text"><b>Спецтех</b>24</span>
-    </a>
+  <div class="container">
+    <div class="logo">
+        <a href="#" class="logo-link">
+          <img src="#" alt="грузовик" class="logo-link-img" />
+          <span class="logo-link-text"><b>Спецтех</b>24</span>
+        </a>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <button href="#" class="header-menu-call">Заказать звонок</button>
+    </nav>
   </div>
-  <nav class="header-menu">
-	  <ul>
-		  <li><a href="#">Главная</a></li>
-		  <li><a href="#">Техника</a></li>
-		  <li><a href="#">Блог</a></li>
-		  <li><a href="#">Контакты</a></li>
-      <li><a href="#" class="header-menu-call">Заказать звонок</a></li>
-	  </ul>
-   </nav>
 </footer>
 </body>
