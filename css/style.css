@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
 	width: 960px; 
 	background-color: pink;
@@ -5,3 +6,11 @@
 .logo {
 	
 }
+=======
+.container {width: 960px; background-color: pink;}
+header {
+		background-color: yellow;
+}
+.about {background-color: #444;}
+// ВСЕГДА код оформляй красиво))
+>>>>>>> origin/master
