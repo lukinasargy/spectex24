@@ -10,9 +10,9 @@
 <header>
   <div class="container">
     <div class="logo">
-        <a href="#" class="logo-link">
-          <img src="img/truck_icon.svg" alt="грузовик" class="logo-link-img" />
-          <span class="logo-link-text"><b>Спецтех</b>24</span>
+        <a href="#" class="logo-link"> <!-- Укажи в ссылке адрес главной страницы, так как при нажатии на логотип, мы должны переходить на главную. -->
+          <img src="img/truck_icon.svg" alt="грузовик" class="logo-link-img" /> // SVG? Красотка))
+          <span class="logo-link-text"><b>Спецтех</b>24</span> <!-- Тег <b> лучше забудь. Конечно, полезно его знать и на основе его вам рассказывали про семантику. Но жирный текст необходимо делать исключительно стилями. А недавно его значение изменилось. В HTML5 предлагают использовать <b> для выделения отрывков текста с целью обратить внимание читателя, однако не подразумевая усиления значимости текста или интонации -->
         </a>
     </div>
     <nav class="header-menu">
@@ -20,9 +20,9 @@
         <li><a href="#">Главная</a></li>
         <li><a href="#">Техника</a></li>
         <li><a href="#">Блог</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Контакты</a></li> <!-- Укажи адреса на файлы с этими страничками -->
       </ul>
-      <button href="#" class="header-menu-call">Заказать звонок</button>
+      <button href="#" class="header-menu-call">Заказать звонок</button> <!-- Верно, это button, потому что тут подразумевается просто всплывающий попап с формой. А еще как вариант засунуть эту внопку в список меню, чтобы потом было легче стилизоавть. Но семантически будет верно все же именно так. -->
     </nav>
   </div>
 </header>
@@ -30,7 +30,7 @@
 <main>  
   <div class="promo">
     <div class="container">
-      <span class="promo-tagline">Вместе мы справимся</span>
+      <span class="promo-tagline">Вместе мы справимся</span> <!-- Здесь лучше использовать div. -->
       <h1 class="promo-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, commodi.</h1>
       <a href="" class="promo-link">Перейти в каталог</a>
     </div>
@@ -65,7 +65,7 @@
   </div>
     <div class="catalog">
       <div class="container">
-        <section class="catalog_menu">
+        <section class="catalog_menu"> <!-- Уверенна, что section?) -->
         
           <h2>Вся техника</h2>
           <ul>
@@ -105,7 +105,7 @@
         <h2>Lorem ipsum dolor.</h2>
         <div class="reply-item">      
           <img src="img/tim2X3szprw.png" alt="photo" />
-          <blockquote class="reply-bq">Lorem ipsum dolor sit amet.</blockquote>
+          <blockquote class="reply-bq">Lorem ipsum dolor sit amet.</blockquote><!-- В blockquote необходимо засунуть все, что с этим связано: и картинку автора тоже -->
           <cite class="reply-author">Lorem ipsum dolor.</cite>
         </div>
         <div class="reply-item">      
@@ -117,7 +117,7 @@
     </div>
   </div>
 
-  <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZDieTl9" width="100%" height="500" frameborder="0"></iframe>
+  <iframe src="https://api-maps.yandex.ru/frame/v1/-/CZDieTl9" width="100%" height="500" frameborder="0"></iframe> <!-- Оберни в div и задай класс, потом все равно нужно будет стилизовать -->
 
 </main>
 
