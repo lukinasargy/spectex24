@@ -11,7 +11,7 @@ header {
 	overflow: hidden;
 }
 
-.header-menu .header-menu-active {
+header .header-menu .header-menu-active {
 	font-weight: bold;
 	color: black;
 }
@@ -35,8 +35,10 @@ header {
 .logo-link-text{
 	vertical-align: middle;
 	font-weight: bold;
-	color: #000;
 	font-size: 24px;
+}
+header .logo-link-text{
+		color: #000;
 }
 .logo-link-text-24 {
 	font-weight: normal;
@@ -50,14 +52,51 @@ header {
 	display: inline-block;		
 }
 .header-menu a {
-	padding: 15px;
+	padding: 14px;
 	font-size: 16px;
-	color: #735c17;
+	border: 2px solid rgba(255, 205, 52, 0);
 }
 button {
 	background: none; 
 	border: none;
-	background-color: #ffe184;
 	padding: 17px 27px;
 }
 
+header .header-menu a:hover {
+	border: 2px solid #bc9d36;
+}
+header .header-menu a:hover:active {
+	border: 2px solid #796e38;
+}
+
+header .header-menu button:hover {
+	background-color: #ffecb2;
+}
+header .header-menu button:hover:active {
+	background-color: #f6bf16;;
+}
+header button {
+	background-color: #ffe184;
+}
+header .header-menu a {
+	color: #735c17;
+}
+footer .header-menu a {
+	color: white;
+}
+footer .logo-link-text{
+		color: #ffcd34;
+}
+footer .header-menu a:hover {
+	border: 2px solid #636d76;
+}
+footer .header-menu a:hover:active {
+	border: 2px solid #a6abb1;
+}
+footer {
+	background-color: #202e3b;
+	overflow: hidden;
+}
+footer button {
+	color: #d2ad35;
+}
