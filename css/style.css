@@ -232,6 +232,12 @@ footer button {
 	font-weight: bold;
 	font-size: 18;
 }
+.consult input[type="submit"]:hover {
+	background-color: #ffd966;
+}
+.consult input[type="submit"]:hover:active {
+	background-color: #f6bf16;
+}
 .advantages {
 	height: 135px;
 	font-size: 13px;
@@ -355,11 +361,17 @@ footer button {
 	font-size: 0;
 }
 */
+
 .technics {
 	background-color: #f3f3f3;
 	height: 400px;
 }
 .technics:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.technics:before{
 	content: '';
 	display: block;
 	clear: both;
@@ -533,29 +545,41 @@ tbody tr:nth-child(even) {
 	letter-spacing: 0;
 }
 .rent-right {
-	float: right;
-	width: 340px;
-	padding: 43px 0;
+	float: left;
+	width: 240px;
+	padding: 57px 0 0 0;
 	
 }
 .rent-right a{
-	/*margin-top: 43px;*/
 	color: #202e3b;
 	padding: 15px 20px;
 	background-color: #ffcd34;
 	font-size: 18px;
+	font-weight: bold;
 }
+.rent-right a:hover{background-color: #ffd966;}
+.rent-right a:hover:active{background-color: #f6bf16;}
 .rent-right p{
 	margin-top: 31px;
 	color: white;
 }
+.catalog {
+	background-color: #f3f3f3;
+	height: 965px;
+/*	overflow: hidden;*/
+}
+/*.catalog:after {
+	content: '';
+	clear: both;
+	display: block;
+}*/
 .catalog .technics-nav {
 	position: relative;
 }
-.technics-nav h2 {
+.catalog .technics-nav h2 {
 	margin-left: 46px;
 }
-.technics-nav h2:before {
+.catalog .technics-nav h2:before {
 	content: '';
 	background-image: url(../img/truck_icon_copy.svg);
 	width: 30px;
@@ -572,3 +596,159 @@ tbody tr:nth-child(even) {
 	width: 620px;
 	margin-left: 80px;
 }
+.catalog-cats :after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.technics-nav-active {
+	font-weight: bold;
+	position: relative;
+	margin-left: 17px;
+}
+.technics-nav-active:before {
+	content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-right: 3px solid #202e3b;
+    border-top: 3px solid  #202e3b;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: -20px;
+}
+.catalog .technics-load {
+	position: relative;
+	background-color: #354b60;
+	color:white;
+	padding: 10px 22px 10px 38px;
+	text-decoration: none;
+}
+.catalog .technics-load:before {
+	content: '';
+	background-image: url(../img/download.svg);
+	width: 18px;
+	height: 18px;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	position: absolute;
+	left: 10px;
+}
+.catalog .technics-load:hover {
+	background-color: #46617a;
+}
+.catalog .technics-load:hover:active {
+	background-color: #567999;
+}
+.cat {
+	float: left;
+	height: 400px;
+	width: 300px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: white;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 28px 30px 35px 30px;
+	overflow: hidden;
+}
+.catalog .cat:nth-child(even) {margin-right: 0;}
+.cat h2 {
+	width: 200px;
+	font-size: 21px;
+	padding-bottom: 25px;
+}
+.cat span {
+	font-weight: bold;
+	font-size: 20px;
+
+}
+.cat a{
+	width: 120px;
+	display: inline-block;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+	float: left;
+	margin-top: 25px;
+
+}
+.cat-rent {
+	background-color: #f3c331;
+}
+.cat-more {
+	background-color: #354b60;
+}
+.breadcrumbs {
+	line-height: 112px;
+	margin-left: 200px;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	
+}
+.breadcrumbs-page {
+	text-decoration: none;
+	color: #353535;
+	padding: 5px 7px;
+	margin-left: 7px;
+}
+.breadcrumbs-active {
+	color: white;
+	background-color: #354b60;
+	border-radius: 2px;
+
+}
+.cat-special-sale {
+	color: #d12222;
+	text-decoration: line-through;
+	padding-right: 15px;
+}
+.special:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.new{ position: relative; }
+.new:before {
+	content: 'new';
+	position: absolute;
+	background-color: #00c22e;
+    padding: 12px 50px 10px 50px;
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+	transform: rotate(45deg);
+	right:-35px;
+	top:10px;
+}
+.sale{ position: relative; }
+.sale:before {
+	content: 'sale';
+	position: absolute;
+	background-color: #d12222;
+    padding: 12px 50px 10px 50px;
+	font-size: 21px;
+	font-weight: bold;
+	color: white;
+	transform: rotate(45deg);
+	right:-35px;
+	top:10px;
+}
+.special {
+	background-image: url(../img/catalog_bg1.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 540px;
+}
+.special:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.special .cat:last-child {margin-right: 0;}
