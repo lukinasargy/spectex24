@@ -5,6 +5,9 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery-ui.theme.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <title>Спецтех24</title>
 </head>
 <body>
@@ -24,7 +27,15 @@
         <li class="main-menu__li"><a href="contacts.html" class="main-menu__link">Контакты</a></li> 
       </ul>
     </nav>
-    <button href="#" class="btn-order">Заказать звонок</button>
+    <button class="btn-order" id="callme" href="#modal-callme">Заказать звонок</button>
+    <div id="modal-callme" class="modal-callme">
+          <form action="input2.php" class="map-consult__form">
+            <input type="text" class="map-consult__name" size="40" placeholder="Имя" />
+            <input type="number" class="map-consult__number" size="11" placeholder="Телефон для связи"/>
+            <input type="text" class="map-consult__text" size="40" placeholder="Описание задачи(можно примерное)"/>
+            <input type="submit" class="map-consult__submit" value="Получить консультацию"/>
+          </form>
+    </div>
   </div>
   <div class="stripes"></div>
 </header>
@@ -44,8 +55,8 @@
       <h2>Закажите бесплатную консультацию по подбору подходящей техники</h2>
       <form action="input1.php">
         <input type="text" size="40" placeholder="Как вас зовут?" />
-        <input type="number" size="11" placeholder="Номер для связи" />
-        <input type="date" size="8" placeholder="Выберите дату" />
+        <input type="text" size="11" placeholder="Номер для связи" />
+        <input type="text" placeholder="Выберите дату" id="date"/>
         <input type="submit" value="Заказать консультацию" />
       </form>
     </div>
@@ -155,7 +166,13 @@
         <li class="main-menu__li"><a href="contacts.html" class="main-menu__link main-menu__link--footer">Контакты</a></li> 
       </ul>
     </nav>
-    <button href="#" class="btn-order btn-order--footer">Заказать звонок</button>  
+    <button class="btn-order btn-order--footer" id="callme" href="#modal-callme">Заказать звонок</button>
   </div>
 </footer>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="js/script.js"></script>
+
 </body>
