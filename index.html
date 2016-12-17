@@ -52,12 +52,12 @@
 
   <div class="consult">
     <div class="container">
-      <h2>Закажите бесплатную консультацию по подбору подходящей техники</h2>
+      <h2 class="consult__title">Закажите бесплатную консультацию по подбору подходящей техники</h2>
       <form action="input1.php">
-        <input type="text" size="40" placeholder="Как вас зовут?" />
-        <input type="text" size="11" placeholder="Номер для связи" />
-        <input type="text" placeholder="Выберите дату" id="date"/>
-        <input type="submit" value="Заказать консультацию" />
+        <input class="consult__input consult__name" type="text" size="40" placeholder="Как вас зовут?" />
+        <input class="consult__input consult__number" type="text" size="11" placeholder="Номер для связи" />
+        <input class="consult__input consult__date" type="text" placeholder="Выберите дату" id="date"/>
+        <input class="consult__input consult__submit" type="submit" value="Заказать консультацию" />
       </form>
     </div>
   </div>
@@ -81,15 +81,15 @@
   <div class="technics">
       <div class="container">
         <nav class="technics-nav">
-          <h2>Вся техника</h2>
-          <ul>
-            <li><a href="#">Гусеничные экскаваторы</a></li>
-            <li><a href="#">Колёсные экскаваторы</a></li>
-            <li><a href="#">Мини-экскаваторы</a></li>
-            <li><a href="#">Автокраны</a></li>
-            <li><a href="#">Фронтальные погрузчики</a></li>
-            <li><a href="#">Навесное оборудование</a></li>
-            <li><a href="#">Дизельгенераторы</a></li>
+          <h2 class="technics-nav__title">Вся техника</h2>
+          <ul class="technics-nav__ul">
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Гусеничные экскаваторы</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Колёсные экскаваторы</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Мини-экскаваторы</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Автокраны</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Фронтальные погрузчики</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Навесное оборудование</a></li>
+            <li class="technics-nav__li"><a class="technics-nav__link" href="#">Дизельгенераторы</a></li>
           </ul>
         </nav>
 
@@ -113,19 +113,19 @@
   <div class="about">
     <div class="container">
       <div class="numbers">
-        <h2>Спецтех <span class="numbers-unbold">в цифрах</span></h2> 
-        <ul>
-          <li><span class="numbers-number">16</span><span class="numbers-text">Лет работы</span></li>
-          <li><span class="numbers-number">715</span><span class="numbers-text">Объектов построено</span></li>
-          <li><span class="numbers-number">108</span><span class="numbers-text">Единиц техники</span></li>
-          <li><span class="numbers-number">500+</span><span class="numbers-text">Довольных клиентов</span></li>
+        <h2 class="numbers__title">Спецтех <span class="numbers-unbold">в цифрах</span></h2> 
+        <ul class="numbers__ul">
+          <li class="numbers__li"><span class="numbers-number">16</span><span class="numbers-text">Лет работы</span></li>
+          <li class="numbers__li"><span class="numbers-number">715</span><span class="numbers-text">Объектов построено</span></li>
+          <li class="numbers__li"><span class="numbers-number">108</span><span class="numbers-text">Единиц техники</span></li>
+          <li class="numbers__li"><span class="numbers-number">500+</span><span class="numbers-text">Довольных клиентов</span></li>
         </ul>
       </div>
       <div class="reply">
-        <h2>Нас рекомендуют клиенты</h2>
+        <h2 class="reply__title">Нас рекомендуют клиенты</h2>
         <div class="reply-item">
           <blockquote class="reply-bq">
-            <img src="img/tim2X3szprw.png" alt="photo" />
+            <img src="img/tim2X3szprw.png" alt="photo" class="reply__img" />
             <p class="reply-item-comment">Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>            
             <cite class="reply-author">Оля Вольт, Реал-Строй</cite>
           </blockquote>
@@ -133,7 +133,7 @@
         </div>
         <div class="reply-item">
           <blockquote class="reply-bq">
-            <img src="img/tuOPQaASJsc.png" alt="photo" />
+            <img src="img/tuOPQaASJsc.png" alt="photo" class="reply__img" />
             <p class="reply-item-comment">Все виды работ, предусмотренные договором, компания выполнила на высоком профессиональном уровне, качественно, в срок, в соответствии с требованиями ООО «ТНН» рекомендует</p>
             <cite class="reply-author">Григорий Безымянных, ТНН</cite>
           </blockquote>
