@@ -112,6 +112,7 @@ header {
 }
 
 input, button {
+	border: 0px;
 	outline:none;
 }
 
@@ -505,21 +506,22 @@ tbody tr:nth-child(even) {
 	letter-spacing: 0;
 }
 .rent-right {
-	float: left;
+	float: right;
 	width: 240px;
 	padding: 57px 0 0 0;
 	
 }
-.rent-right a{
+.rent__link, .contacts__link {
 	color: #202e3b;
 	padding: 15px 20px;
 	background-color: #ffcd34;
 	font-size: 18px;
 	font-weight: bold;
+
 }
-.rent-right a:hover{background-color: #ffd966;}
-.rent-right a:hover:active{background-color: #f6bf16;}
-.rent-right p{
+.rent__link:hover{background-color: #ffd966;}
+.rent__link:hover:active{background-color: #f6bf16;}
+.rent__text{
 	margin-top: 31px;
 	color: white;
 }
@@ -771,9 +773,209 @@ tbody tr:nth-child(even) {
 	color: white;
 	float: left;
 	padding: 50px 0px 40px 45px;
+}
+.portfolio-menu__link:hover {
+	font-weight: bold;
 
 }
-/*.portfolio-menu__nav li:first-child .portfolio-menu__link{
-	padding-left: 0;
+.portfolio-menu__link:hover:active {
+	text-decoration: none;
 }
-*/
+
+.color-black {
+	background-color: black;
+}
+
+.house-one, .house-two, .house-three {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin-top: 10px;
+	height: 400px;
+	padding-top: 100px;
+}
+.house-one {
+	background-image: url(../img/portfolio1.jpg);
+}
+.house-two {
+	background-image: url(../img/portfolio2.jpg);
+}
+.house-three {
+	background-image: url(../img/portfolio3.jpg);
+}
+.house__title {
+	font-weight: bold;
+	font-size: 20px;
+	color: #202e3b;
+}
+.house {
+	background-color: white;
+	width: 262px;
+	height: 185px;
+	padding: 30px;
+}
+.house__text {
+	font-size: 14px;
+	line-height: 20px;
+}
+.house__link {
+	position: relative;
+	color: #1d333f;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 11px 37px 11px 17px;
+	background-color: #ffcd34;
+	display: inline-block;
+}
+.house__link:after {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #202e3b;
+    border-top: 2px solid  #202e3b;
+    transform: rotate(45deg);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0px;
+    margin-right: 14px;
+  }
+  .house__link:hover {
+  	background-color: #ffd966;
+  }
+    .house__link:hover:active {
+  	background-color: #f6bf16;
+  }
+
+  .contacts {
+	background-image: url(../img/contacts_bg.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+ .contacts__tagline {
+	font-size: 24px;
+	font-weight: normal;
+	color: #b09331;
+	padding: 45px 0;
+	margin: 0;
+	width: 120px;
+	/* vertical-align: middle; */
+	display: inline-block;
+
+}
+.contacts__text {
+	color: white;
+	/*vertical-align: middle;*/
+	padding: 45px 0 ;
+	margin: 0;
+	display: inline-block;
+}
+.contacts__link {
+	display: inline-block;
+	float: right;
+	margin-top: 35px;
+}
+
+.map {
+	background-color: #f3f3f3;
+	padding-bottom: 50px;
+}
+.map-map {
+	float: left;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+.map-consult {
+	float: left;
+	width: 300px;
+	margin-top: 40px;
+}
+.map:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.map-consult__phone,.map-consult__letter {
+	float: left;
+	position: relative;
+	padding-left: 38px;
+}
+.map-consult__phone:before {
+	content: '';
+	background-image: url(../img/phone.svg);
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background-repeat: no-repeat;
+	left:0;
+}
+.map-consult__letter:before {
+	content: '';
+	background-image: url(../img/mail.svg);
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	display: block;
+	background-repeat: no-repeat;
+	left:0;
+}
+.map-consult__letter {
+	margin-top: 25px;
+}
+.map-consult__paragraph {
+	float: left;
+}
+
+.map-consult__name, .map-consult__number{
+	width: 288px;
+	border: 1px solid #d5d5d5;
+	height: 38px;
+	padding-left: 12px;
+	margin-bottom: 10px;
+}
+.map-consult__text {
+	width: 280px;
+	border: 1px solid #d5d5d5;
+	height: 92px;
+	padding: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+.map-consult__submit {
+	width: 300px;
+	height: 45px;
+	background-color: #354b60;
+	color: white;
+	font-size: 18px;
+	float: left;
+}
+
+.review {
+	overflow: hidden;
+	padding-top: 38px;
+}
+.review:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.review-item {
+	width: 220px;
+	height: 366px;
+	float: left;
+	text-align: center;
+}
+.review-item-bq-text {
+	font-size: 14px;
+	font-style: italic;
+	color: #202e3b;
+}
+
+.review-author{
+	font-weight: bold;
+	font-style: normal;
+	color: #202e3b;
+}

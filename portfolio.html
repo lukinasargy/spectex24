@@ -32,7 +32,7 @@
           <form action="input2.php" class="map-consult__form">
             <input type="text" class="map-consult__name" size="40" placeholder="Имя" />
             <input type="number" class="map-consult__number" size="11" placeholder="Телефон для связи"/>
-            <input type="text" class="map-consult__text" size="40" placeholder="Описание задачи(можно примерное)"/>
+            <textarea  class="map-consult__text" placeholder="Описание задачи(можно примерное)"></textarea>
             <input type="submit" class="map-consult__submit" value="Получить консультацию"/>
           </form>
     </div>
@@ -42,59 +42,63 @@
 
 
 <main>	
-  <div class="portfolio-menu">
-    <div class="container">
-    	<h2 class="portfolio-tagline">Портфолио</h2>
-      <nav class="portfolio-menu__nav">
-        <ul>
-          <li><a href="#" class="portfolio-menu__link">Все работы</a></li>
-          <li><a href="#" class="portfolio-menu__link">Строительство</a></li>
-          <li><a href="#" class="portfolio-menu__link">Демонтаж</a></li>
-          <li><a href="#" class="portfolio-menu__link">Земляные работы</a></li>
-          <li><a href="#" class="portfolio-menu__link">Перевозки</a></li>
-        </ul>
-      </nav>
+  <div class="color-black">
+    <div class="portfolio-menu">
+      <div class="container">
+      	<h2 class="portfolio-tagline">Портфолио</h2>
+        <nav class="portfolio-menu__nav">
+          <ul>
+            <li><a href="#" class="portfolio-menu__link">Все работы</a></li>
+            <li><a href="#" class="portfolio-menu__link">Строительство</a></li>
+            <li><a href="#" class="portfolio-menu__link">Демонтаж</a></li>
+            <li><a href="#" class="portfolio-menu__link">Земляные работы</a></li>
+            <li><a href="#" class="portfolio-menu__link">Перевозки</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
-  <div class="house1">
-    <div class="container">
-      <div class="house">
-        <h2 class="house-title">Строительство жилого дома в деревушке на севере холма</h2>
-        <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
-        <a href="#">Lorem.</a>
+  
+    <div class="house-one">
+      <div class="container">
+        <div class="house">
+          <h2 class="house__title">Строительство жилого дома в деревушке на севере холма</h2>
+          <p class="house__text">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
+          <a href="#" class="house__link">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="house-two">
+      <div class="container">
+          <div class="house">
+            <h2 class="house__title">Строительство жилого дома в деревушке на севере холма</h2>
+            <p class="house__text"> Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
+            <a href="#" class="house__link">Подробнее</a>
+          </div>
+      </div>
+    </div>
+    <div class="house-three">
+      <div class="container">
+          <div class="house">
+            <h2 class="house__title">Строительство жилого дома в деревушке на севере холма</h2>
+            <p class="house__text">Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
+            <a href="#" class="house__link">Подробнее</a>
+          </div>
       </div>
     </div>
   </div>
-  <div class="house2">
-    <div class="container">
-        <div class="house">
-          <h2 class="house-title">Строительство жилого дома в деревушке на севере холма</h2>
-          <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
-          <a href="#">Lorem.</a>
-        </div>
-    </div>
-  </div>
-  <div class="house3">
-    <div class="container">
-        <div class="house">
-          <h2 class="house-title">Строительство жилого дома в деревушке на севере холма</h2>
-          <p>Спецтех24 – это сеть пунктов аренды спецтехники Cat, оборудования и специализированных инструментов для выполнения большинства видов работ.</p>
-          <a href="#">Lorem.</a>
-        </div>
-    </div>
-  </div>
- <div class="consult">
+  <div class="stripes"></div>
+  <div class="consult">
     <div class="container">
       <h2>Закажите бесплатную консультацию по подбору подходящей техники</h2>
       <form action="input1.php">
         <input type="text" size="40" placeholder="Как вас зовут?" />
-        <input type="number" size="11" placeholder="Номер для связи" />
-        <input type="date" size="8" placeholder="Выберите дату" />
+        <input type="text" size="11" placeholder="Номер для связи" />
+        <input type="text" placeholder="Выберите дату" id="date"/>
         <input type="submit" value="Заказать консультацию" />
       </form>
     </div>
   </div>
-
+  
   <div class="advantages">
     <div class="container">
       <div class="advantages-tools">
@@ -111,7 +115,7 @@
       </div>
     </div>
   </div>
-    
+  
  </main>
 <footer>
   <div class="container">
@@ -129,7 +133,7 @@
         <li class="main-menu__li"><a href="contacts.html" class="main-menu__link main-menu__link--footer">Контакты</a></li> 
       </ul>
     </nav>
-    <button href="#" class="btn-order btn-order--footer">Заказать звонок</button>  
+    <button href="#modal-callme" id="callme"  class="btn-order btn-order--footer">Заказать звонок</button>   
   </div>
 </footer>
   <script src="js/jquery-3.1.1.min.js"></script>

@@ -32,7 +32,7 @@
           <form action="input2.php" class="map-consult__form">
             <input type="text" class="map-consult__name" size="40" placeholder="Имя" />
             <input type="number" class="map-consult__number" size="11" placeholder="Телефон для связи"/>
-            <input type="text" class="map-consult__text" size="40" placeholder="Описание задачи(можно примерное)"/>
+            <textarea  class="map-consult__text" placeholder="Описание задачи(можно примерное)"></textarea>
             <input type="submit" class="map-consult__submit" value="Получить консультацию"/>
           </form>
     </div>
@@ -49,8 +49,8 @@
               Если вы искали идельных партнеров на объект - Вы нашли их. <br> Что понадобится Вам сегодня?</p>
       </div>
     	<div class="rent-right">
-        <a href="">Мне нужна консультация</a>
-        <p>Оставьте заявку, и уже сегодня мы вам перезвоним</p>
+        <a href="contacts.html" class="rent__link">Мне нужна консультация</a>
+        <p class="rent__text">Оставьте заявку, и уже сегодня мы вам перезвоним</p>
       </div>
     </div>
   </div>
@@ -161,7 +161,7 @@
         <li class="main-menu__li"><a href="contacts.html" class="main-menu__link main-menu__link--footer">Контакты</a></li> 
       </ul>
     </nav>
-    <button href="#" class="btn-order btn-order--footer">Заказать звонок</button>  
+    <button href="#modal-callme" id="callme"  class="btn-order btn-order--footer">Заказать звонок</button>  
   </div>
 </footer>
   <script src="js/jquery-3.1.1.min.js"></script>

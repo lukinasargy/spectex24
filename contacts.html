@@ -32,7 +32,7 @@
           <form action="input2.php" class="map-consult__form">
             <input type="text" class="map-consult__name" size="40" placeholder="Имя" />
             <input type="number" class="map-consult__number" size="11" placeholder="Телефон для связи"/>
-            <input type="text" class="map-consult__text" size="40" placeholder="Описание задачи(можно примерное)"/>
+            <textarea  class="map-consult__text" placeholder="Описание задачи(можно примерное)"></textarea>
             <input type="submit" class="map-consult__submit" value="Получить консультацию"/>
           </form>
     </div>
@@ -44,9 +44,9 @@
 <main>	
   <div class="contacts">
     <div class="container">
-      <h1 class="contacts-tagline">Контакты</h1>
-      <p class="contacts-text">Свяжитесь с нами, и все будет хорошо</p>
-      <a href="" class="contacts-link">Мне нужна консультация</a>
+      <h1 class="contacts__tagline">Контакты</h1>
+      <p class="contacts__text">Свяжитесь с нами, и все будет хорошо</p>
+      <a href="#modal-callme" id="callme" class="contacts__link">Мне нужна консультация</a>
     </div>
   </div>
 
@@ -56,13 +56,13 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.26317921276!2d37.61860631548347!3d55.753930280553625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1480448340563" width="620" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       <div class="map-consult">
-        <strong>Lorem.</strong>
-        <strong>Lorem ipsum.</strong>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <strong class="map-consult__phone">+7 (812) 212 85 06</strong> <br>
+        <strong class="map-consult__letter">rent@spezteh.ru</strong>
+        <p class="map-consult__paragraph">Заказать консультацию по подбору подходящей техники:</p>
           <form action="input2.php" class="map-consult__form">
             <input type="text" class="map-consult__name" size="40" placeholder="Имя" />
             <input type="number" class="map-consult__number" size="11" placeholder="Телефон для связи"/>
-            <input type="text" class="map-consult__text" size="40" placeholder="Описание задачи(можно примерное)"/>
+            <textarea  class="map-consult__text" placeholder="Описание задачи(можно примерное)"></textarea>
             <input type="submit" class="map-consult__submit" value="Получить консультацию"/>
           </form>
       </div>
@@ -71,7 +71,7 @@
  
   <div class="review">
     <div class="container">
-      <h2>Lorem.</h2>
+      <h2>Отзывы</h2>
       <div class="review-item">
         <blockquote class="review-item-bq">
           <img src="img/tim2X3szprw2.png" alt="photo" />
@@ -96,7 +96,6 @@
         
       </div>
       <div class="review-item">      
-        
         <blockquote class="review-item-bq">
           <img src="img/o6JLO1rRXUM.png" alt="photo" />
           <p class="review-item-bq-text">Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</p>
@@ -124,7 +123,7 @@
         <li class="main-menu__li"><a href="contacts.html" class="main-menu__link main-menu__link--active main-menu__link--footer">Контакты</a></li> 
       </ul>
     </nav>
-    <button href="#" class="btn-order btn-order--footer">Заказать звонок</button>  
+    <button href="#modal-callme" id="callme"  class="btn-order btn-order--footer">Заказать звонок</button>  
   </div>
 </footer>
   <script src="js/jquery-3.1.1.min.js"></script>
